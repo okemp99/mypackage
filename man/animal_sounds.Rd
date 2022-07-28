@@ -4,21 +4,23 @@
 \alias{animal_sounds}
 \title{Describes the Given Sound and Animal as a Message}
 \usage{
-animal_sounds(animal, sound)
+animal_sounds(animal, sound = NULL)
 }
 \arguments{
 \item{animal}{A character string}
 
-\item{sound}{A character string}
+\item{sound}{A character string. If no input is given defaults to NULL.}
 }
 \value{
 A message giving the constructed sentence.
 }
 \description{
 Takes an animal and a sound as a string, and creates a message stating that
-the animal says the sound, using the \code{\link{paste0}} function.
+the animal says the sound, using the \code{\link{paste0}} function. If sound is NULL,
+the sentence states that animal makes no sound.
 }
 \examples{
 animal_sounds("cow", "moo")
 animal_sounds("sheep", "baa")
+animal_sounds("fish")
 }

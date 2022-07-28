@@ -11,3 +11,8 @@ test_that("handles invalid inputs", {
                "sound is not a string \\(a length one character vector\\)")
 })
 
+test_that("handles missing sound", {
+  giraffe <- animal_sounds("giraffe")
+  expect_equal(giraffe,
+               "The giraffe makes no sound.")
+})
