@@ -13,7 +13,6 @@
 #' animal_sounds("cow", "moo")
 #' animal_sounds("sheep", "baa")
 animal_sounds <- function(animal, sound) {
-  stopifnot(is.character(animal) & length(animal) == 1)
-  stopifnot(is.character(sound) & length(sound) == 1)
+  assertthat::assert_that(assertthat::is.string(animal), assertthat::is.string(sound))
   paste0("The ", animal, " says ", sound, "!")
 }
