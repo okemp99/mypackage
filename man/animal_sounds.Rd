@@ -12,10 +12,11 @@ animal_sounds(animal, sound)
 \item{sound}{A character string}
 }
 \value{
-A message giving the constructed sentence
+A message giving the constructed sentence.
 }
 \description{
-Takes an animal and a sound as a string, and creates a message stating that the animal says the sound.
+Takes an animal and a sound as a string, and creates a message stating that
+the animal says the sound, using the \code{\link{paste0}} function.
 }
 \examples{
 animal_sounds("cow", "moo")
