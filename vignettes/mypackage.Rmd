@@ -1,0 +1,30 @@
+---
+title: "Test Vignette for mypackage"
+author: "Ollie Kemp"
+date: "2022-07-28"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Test Vignette for mypackage}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(mypackage)
+```
+
+
+Test vignette
+
+Can run command as follows:
+
+```{r}
+animal_sounds("cow", "moo")
+```
