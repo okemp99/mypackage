@@ -4,6 +4,8 @@
 # mypackage
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/okemp99/mypackage/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/okemp99/mypackage/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 This is a test package for the R package development session on
